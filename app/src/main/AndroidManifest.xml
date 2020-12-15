@@ -17,9 +17,17 @@
         </activity>
 
         <service
+            android:name=".service.MyIntentService"
+            android:exported="false"></service>
+
+        <service
+            android:name=".service.CounterService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
             android:name=".service.NotificationService"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>
